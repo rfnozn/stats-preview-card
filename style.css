@@ -1,3 +1,10 @@
+:root {
+  --white: #fff;
+  --navy: #0A0C1C;
+  --blue-950: #1B1937;
+  --purple-500: #AB5CDB;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
