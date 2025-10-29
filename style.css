@@ -102,6 +102,15 @@ p {
   border-radius: 12px;
 }
 
+
+@media screen and (min-width: 48rem) {
+  .card {
+    max-width: 564px;
+    margin-inline: 102px;
+    text-align: left;
+  }
+}
+
 .card__img {
   opacity: 24.89%;
   /* filter: invert(62%) sepia(50%) saturate(7264%) hue-rotate(245deg) brightness(92%) contrast(85%); */
@@ -111,12 +120,26 @@ p {
 
 .card__content {
   padding: 24px 32px;
+  display: grid;
+}
+
+@media screen and (min-width: 48rem) {
+  .card__content {
+    max-width: 53ch;
+    padding: 64px 80px;
+  }
 }
 
 .card__title {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.25;
+}
+
+@media screen and (min-width: 48rem) {
+  .card__title {
+    font-size: 36px;
+  }
 }
 
 .card__title span {
@@ -130,9 +153,21 @@ p {
   padding-block: 8px 40px;
 }
 
+@media screen and (min-width: 48rem) {
+  .card__text {
+    padding-block: 24px 72px;
+  }
+}
+
 .card__stats {
   display: grid;
   row-gap: 32px;
+}
+
+@media screen and (min-width: 48rem) {
+  .card__stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card__stats div p:nth-child(1) {
