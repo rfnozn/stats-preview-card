@@ -81,13 +81,71 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
-}
+} */
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+/* #root, #__next {
   isolation: isolate;
+} */
+
+.card {
+  max-width: 327px;
+  margin-inline: 24px;
+  background-color: var(--blue-950);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.card__img {
+  opacity: 24.89%;
+  /* filter: invert(62%) sepia(50%) saturate(7264%) hue-rotate(245deg) brightness(92%) contrast(85%); */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card__content {
+  padding: 24px 32px;
+}
+
+.card__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.card__title span {
+  color: var(--purple-500);
+}
+
+.card__text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  padding-block: 8px 40px;
+}
+
+.card__stats {
+  display: grid;
+  row-gap: 32px;
+}
+
+.card__stats div p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.card__stats div p:nth-child(2) {
+  text-transform: uppercase;
+  letter-spacing: 1;
+  opacity: 0.6;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
 }
