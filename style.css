@@ -113,6 +113,7 @@ p {
 @media screen and (min-width: 90rem) {
   .card {
     max-width: 1128px;
+    margin-inline: 156px;
     flex-direction: row-reverse;
   }
 
