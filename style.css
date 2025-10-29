@@ -73,9 +73,9 @@ input, button, textarea, select {
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+/* p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
-}
+} */
 
 /* 9. Improve line wrapping */
 p {
@@ -135,7 +135,7 @@ p {
 
 .card__img {
   /* filter: invert(0%) sepia(40%) saturate(4264%) hue-rotate(245deg) brightness(92%) contrast(40%); */
-  opacity: 24.89%;
+  opacity: 0.2489;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -201,7 +201,7 @@ p {
 
 .card__stats div p:nth-child(2) {
   text-transform: uppercase;
-  letter-spacing: 1;
+  letter-spacing: 1px;
   opacity: 0.6;
   font-size: 12px;
   font-weight: 400;
